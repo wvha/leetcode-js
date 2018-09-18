@@ -11,3 +11,7 @@ const pruneTree = function(root) {
 
   return root;
 }
+
+
+// recursive solution
+// at the leaf of tree, if its value !== 1, "delete" it

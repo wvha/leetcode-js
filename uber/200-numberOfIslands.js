@@ -41,3 +41,8 @@ var numIslands = function(grid) {
   }
   return islands;
 }
+
+// must check every value in grid
+// if current spot is land, you 'visit' it in all directions
+// and turn the spot to 0 to know that you've visited it
+// after all pieces in that land are checked, you up the islands count

@@ -7,3 +7,11 @@ var minCostClimbingStairs = function(cost) {
   }
   return Math.min(minCost[n-1], minCost[n-2]);
 }
+
+/*
+explanation:
+loop through copy of array
+at each value, we're adding the Math.min of the two possible steps
+at the end, we return the Math.min between the last two items
+
+*/

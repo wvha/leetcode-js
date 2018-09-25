@@ -11,18 +11,18 @@
  * @return {TreeNode}
  */
 
+
 var searchBST = function(root, val) {
-
-
-  if (root.val === val) {
-    return root;
-  }
-  if (root.val < val && root.right !== null) {
-    searchBST(root.right, val);
-  }
-  if (root.val > val && root.left !== null) {
-    searchBST(root.left, val);
-  }
-  return [];
+    if (root.val === val){
+        return root;
+    } else if (val < root.val && root.left !== null) {
+        return searchBST(root.left, val);
+    } else if (val > root.val && root.right !== null) {
+        return searchBST(root.right, val);
+    } else {
+      return [];
+    }
 };
+
+
 

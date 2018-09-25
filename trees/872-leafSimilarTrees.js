@@ -24,6 +24,8 @@ when you reach a leaf, push to array
 do the same for root 2
 if two ttrees the same, then return true
 
+time complexity: n? must visit each node
+space complexity: ... n?
 
  */
 

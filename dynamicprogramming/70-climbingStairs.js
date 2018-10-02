@@ -3,7 +3,6 @@
  * @return {number}
  */
 var climbStairs = function(n) {
-  let count = 0;
 
   let prev = 1;
   let curr = 1;
